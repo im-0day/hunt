@@ -14,27 +14,6 @@ sudo apt install python3 -y
 sudo apt install python3-pip -y
 sudo apt install python2 -y
 
-#Setup of GO lang
-echo "${G}[+] Installing go, if already go is installed then updating it${NC}"
-					LATEST_GO_VERSION="$(curl --silent https://go.dev/VERSION?m=text)";
-					echo "${G}[+] Installing Golang${NC}"
-					wget https://golang.org/dl/${LATEST_GO_VERSION}.linux-amd64.tar.gz
-					sudo chmod 777 ${LATEST_GO_VERSION}.linux-amd64.tar.gz
-					sudo tar -xvf ${LATEST_GO_VERSION}.linux-amd64.tar.gz
-					sudo mv go /usr/local
-					export GOROOT=/usr/local/go
-					export GOPATH=$HOME/go
-					export PATH=$GOPATH/bin:$GOROOT/bin:$PATH
-					# Writing in .bashrc
-					echo 'export GOROOT=/usr/local/go' >> ~/.bashrc
-					echo 'export GOPATH=$HOME/go'	>> ~/.bashrc			
-					echo 'export PATH=$GOPATH/bin:$GOROOT/bin:$PATH' >> ~/.bashrc	
-					source ~/.bashrc
-					# Writing in .zshrc
-					echo 'export GOROOT=/usr/local/go' >> ~/.zshrc
-					echo 'export GOPATH=$HOME/go' >> ~/.zshrc
-					echo 'export PATH=$GOPATH/bin:$GOROOT/bin:$PATH' >> ~/.zshrc
-					source ~/.zshrc
 #Directory to store Weapons 
 echo "${G}[+] Making a directory to Store your weapons${NC}"
 mkdir ~/Weapons
