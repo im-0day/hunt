@@ -13,8 +13,6 @@ sudo apt-get autoremove -y
 sudo apt install python3 -y
 sudo apt install python3-pip -y
 sudo apt install python2 -y
-apt install golang-go -y
-apt install gccgo-go -y
 
 #Setup of GO lang
 echo "${G}[+] Installing go, if already go is installed then updating it${NC}"
