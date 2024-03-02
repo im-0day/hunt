@@ -58,6 +58,12 @@ chmod +x install.sh
 ./install.sh
 Done ✔
 ```
+#### Zsh installation
+```bash
+apt install zsh
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+```
+
 
 #### i hope you enjoy bughunting
 
