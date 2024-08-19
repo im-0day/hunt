@@ -41,22 +41,16 @@
 #### SetUp ->
 
 ```bash
-# First install golang-go
 wget https://go.dev/dl/go1.22.0.linux-amd64.tar.gz
 tar -xzvf go1.22.0.linux-amd64.tar.gz
 sudo mv go /usr/local/
-# add the go to the path
-vi ~/.zshrc
-# and add this text to the file
-export PATH=$PATH:/usr/local/go/bin
-# now close the editor and write this text
+echo 'export PATH=$PATH:/usr/local/go/bin' >> ~/.zshrc
 source ~/.zshrc
-# Now install the script 
+rm -rf go1.22.0.linux-amd64.tar.gz
 sudo git clone https://github.com/im-0day/hunt.git
 cd hunt
 chmod +x install.sh
 ./install.sh
-Done ✔
 ```
 #### Zsh installation
 ```bash
